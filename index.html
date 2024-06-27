@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets//images/chatlogo.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <header class="header-content">
+        <a href="#logo" class="logo">
+          <img src="/assets//images/logo.png" alt="Logo Image" class="logo-icon" width="30px" />
+          <span class="logo-text"> Chat Hub </span>
+        </a>
+      </header>
+    </div>
+
+    <div class="content">
+      <div class="messagecontainer">
+
+      </div>
+     
+      <div class="input-text">
+        <form action="" id="msgform">
+              <input type="text" name="message" id="messageinput" placeholder="Type a message ...">  
+              <input type="submit" value="Send" id="sendbtn">  
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      &copy; 2024 - ChatHub. All rights reserved.
+    </div>
+    <script defer src="js/client.js"></script>
+  </body>
+</html>

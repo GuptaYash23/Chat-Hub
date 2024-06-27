@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 0.1rem;
+}
+
+:root
+{
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #3f3fc16c;
+    border-radius: 10px;
+}
+
+.header-content
+{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo
+{
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color)
+}
+
+.logo-icon
+{
+    width: 100px;
+    transform: all 1s;
+    transition-duration: 1s;
+}
+
+.logo-icon:hover{
+    scale: 1.15;
+}
+
+.logo-text
+{
+    font-size: 2rem;
+}
+
+.logo-text:hover
+{
+    color: var(--link-color);
+}
+
+.content 
+{
+  width: 70vw;
+  height: 65vh;
+  margin: 1rem auto;
+  background-color: #f0f2f574;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+.messagecontainer
+{
+    max-height: 100%;
+    padding: 2rem 0;
+    padding-bottom: 5rem;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.message
+{
+    background-color: #3f3fc1e8;
+    color: white;
+    padding: 8px;
+    border: solid white 1px;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
+
+.join-message
+{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #3f3fc1e8;
+    border: solid 1px #3f3fc1e8;
+    margin: 0.5rem 0;
+}
+
+.left 
+{
+    float: left;
+    clear: both;
+    margin-left: 1rem;
+}
+
+.right 
+{
+    float: right;
+    clear: both;
+    margin-right: 1rem;
+}
+
+
+.input-text
+{
+    background-color: #f0f2f5;
+    width: 100%;
+    height: auto;
+    max-height: 4rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#msgform
+{
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#messageinput
+{
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    min-height: 2rem;
+    overflow-y: scroll;
+    caret-color:  #5E5DF0;;
+}
+
+#messageinput:focus
+{
+    outline:none;
+}
+
+
+
+#sendbtn {
+  background: #3635d5;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+
+.footer-copyright
+{
+    color: var(--gray);
+    font-size: 0.75rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-top: 1.5rem;
+    border-top: solid #E5E7EB 1px;
+}
